@@ -17,19 +17,19 @@ constructor(private http: HttpClient,private accountSerice: AccountService) {}
 
   ngOnInit()  {
 
-    this.getUsers();
-    this.setCurrentUser();
+    // this.getUsers();
+    // this.setCurrentUser();
   }
 
-  getUsers(){
+  // getUsers(){
 
-    this.http.get('https://localhost:5001/api/users').subscribe(response => {
-      this.users = response
-    }, error => {
-      console.log(error)
-    })
+  //   this.http.get('https://localhost:5001/api/users').subscribe(response => {
+  //     this.users = response
+  //   }, error => {
+  //     console.log(error)
+  //   })
 
-  }
+  // }
 
   setCurrentUser(){
 
